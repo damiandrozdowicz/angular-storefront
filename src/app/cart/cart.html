@@ -1,0 +1,54 @@
+<div class="shopping-cart-wrapper">
+  <button
+    aria-label="Open cart"
+    class="shopping-cart-toggle"
+    data-testid="shopping-cart-toggle"
+  >
+    <img alt="Open Cart" height="15" src="gog-cart-icon.svg" width="17">
+    {{ totalItemsQty() }}
+  </button>
+
+  <aside aria-label="Shopping cart" class="shopping-cart" role="complementary">
+    @if (totalItemsQty()) {
+      <header class="cart-summary">
+        <h3 class="cart-status" data-testid="cart-status">{{ totalItemsQty() }} Items in Cart</h3>
+        <span class="cart-total" data-testid="cart-total">{{ cartItemsTotal() | currency }}</span>
+        <button (click)="handleClearCart()" class="button button-secondary" aria-label="Clear cart"
+                data-testid="clear-cart-button">
+          Clear Cart
+        </button>
+      </header>
+
+      <table class="shopping-cart-items">
+        <tbody>
+          @for (cartItem of cartItems(); track cartItem.id) {
+            <tr class="shopping-cart-item" data-testid="cart-item">
+              <td data-testid="image">
+                <figure class="image-wrapper">
+                  <img class="image" data-testid="cart-item-image" [alt]="'Cover art of ' + cartItem.name"
+                       [src]="cartItem.media"/>
+                </figure>
+              </td>
+              <td data-testid="title">
+                <p class="item-name" data-testid="cart-item-name">{{ cartItem.name }}</p>
+                <button
+                  class="remove-product-button inline-button small"
+                  aria-label="Remove item from cart"
+                  data-testid="remove-item-button"
+                  (click)="handleRemoveItem(cartItem)"
+                >
+                  Remove
+                </button>
+              </td>
+              <td class="item-price" data-testid="cart-item-price">{{ cartItem.price | currency }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    } @else {
+      <header class="cart-summary">
+        <h3 class="cart-status" data-testid="cart-empty-status">Your cart is empty</h3>
+      </header>
+    }
+  </aside>
+</div>

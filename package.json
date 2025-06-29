@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --configuration=development",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test --browsers=ChromeHeadless",
+    "local-api": "json-server --watch mock-api/mock-api.json"
   },
   "prettier": {
     "overrides": [
@@ -31,16 +32,19 @@
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^19.2.15",
     "@angular/build": "^20.0.4",
     "@angular/cli": "^20.0.4",
     "@angular/compiler-cli": "^20.0.0",
     "@types/jasmine": "~5.1.0",
     "jasmine-core": "~5.7.0",
+    "json-server": "^1.0.0-beta.3",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-mocks": "^14.13.5",
     "typescript": "~5.8.2"
   }
 }

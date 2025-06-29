@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --gog-gray: #CDCDCD;
+  --gog-white: #E0E0E0;
+  --gog-light-gray: #DEDEDE;
+  --gog-muted: #8f8f8f;
+  --gog-dark-gray: #404040;
+  --gog-purple: #6C36AD;
+  --gog-purple-10: rgba(108, 54, 173, 0.1);
+  --gog-green: #00905E;
+
+  --space-xs: 3px;
+  --space-s: 6px;
+  --space-m: 12px;
+  --space-l: 24px;
+
+  --font-size-small: 12px;
+  --font-size-base: 14px;
+  --font-size-h1: 24px;
+  --font-size-h2: 18px;
+  --font-size-h3: 18px;
+  --font-size-h4: 16px;
+  --font-size-h5: 16px;
+  --font-size-h6: 16px;
+
+  --shadow: 0px 1px 3px #aca8a8
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  background:  linear-gradient(to bottom, var(--gog-purple-10), transparent), var(--gog-gray);
+}
+
+img {
+  display: block;
+}
+
+.layout-positioning {
+  width: 1060px;
+  padding: 0 var(--space-l);
+  margin: 0 auto;
+}
+
+figure, ul ,ol, h1, h2, h3, h4, h5, h6, p, blockquote, pre {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.visually-hidden {
+  display: none;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}

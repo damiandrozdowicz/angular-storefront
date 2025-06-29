@@ -1,0 +1,11 @@
+<section aria-labelledby="featured-games" class="featured-games-wrapper">
+  <h2 class="visually-hidden" id="featured-games">Featured Games</h2>
+
+  <ol class="featured-games">
+    @for (game of (games$ | async); track game.id; let idx = $index) {
+      <li class="game" [attr.data-testid]="'game-' + idx">
+        <app-featured-game data-testid="game" [game]="game"></app-featured-game>
+      </li>
+    }
+  </ol>
+</section>

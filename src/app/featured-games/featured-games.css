@@ -1,0 +1,13 @@
+.featured-games {
+  display: grid;
+  gap: var(--space-l);
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.featured-games-wrapper {
+  margin-top: var(--space-l);
+}
+
+.game {
+  background-color: var(--gog-white);
+}

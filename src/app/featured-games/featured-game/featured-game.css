@@ -1,0 +1,63 @@
+.game {
+  box-shadow: var(--shadow);
+}
+
+.image {
+  width: 100%;
+  display: block;
+}
+
+.game-desc {
+  padding: var(--space-s)
+}
+
+.title {
+  font-size: var(--font-size-base);
+  text-transform: uppercase;
+}
+
+.game-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: var(--space-s);
+  align-items: center;
+  gap: var(--space-s);
+}
+
+.game {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  padding: var(--space-xs) var(--space-s);
+  text-transform: uppercase;
+  border: solid 2px var(--gog-gray);
+  display: block;
+  min-width: 40px;
+  font-size: var(--font-size-base);
+  text-align: center;
+  font-weight: 600;
+}
+
+.discount-label {
+  background-color: var(--gog-green);
+  color: var(--gog-white);
+}
+
+.in-cart-label {
+  border: solid var(--gog-muted);
+  color: var(--gog-muted);
+}
+
+.owned-label {
+  color: var(--gog-muted);
+  border: solid 2px var(--gog-muted);
+  opacity: 0.5;
+}
+
+.price-label {
+  cursor: pointer;
+}

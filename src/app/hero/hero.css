@@ -1,0 +1,16 @@
+.title {
+  text-transform: uppercase;
+  font-size: var(--font-size-h2);
+  margin: var(--space-l) 0;
+}
+
+.media-wrapper .image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.media-wrapper {
+  box-shadow: var(--shadow);
+}
+

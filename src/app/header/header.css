@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: var(--space-m) var(--space-l);
+}
+
+.header-wrapper {
+  background:  linear-gradient(to bottom, var(--gog-light-gray), white, white, transparent), var(--gog-light-gray);
+}

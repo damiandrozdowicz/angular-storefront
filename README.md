@@ -1,13 +1,27 @@
-# Gog2
+# GOG Coding Challenge
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.4.
+
+For either development or production, first of all install dependencies:
+
+```bash
+npm i
+```
 
 ## Development server
 
 To start a local development server, run:
 
 ```bash
-ng serve
+npm run local-api
+```
+
+This will spin a `json-server` instance based on mock data stored in `mock-api/mock-api.json`
+
+Then for local development run:
+
+```bash
+npm run start
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
