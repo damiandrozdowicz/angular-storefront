@@ -39,6 +39,11 @@
   width: 370px;
   left: calc(-370px + var(--cart-toggle-width));
   top: var(--cart-toggle-width);
+
+  @media screen and (max-width: 768px) {
+    width: 200px;
+    left: calc(-200px + var(--cart-toggle-width));
+  }
 }
 
 .shopping-cart-wrapper:hover .shopping-cart,
@@ -83,6 +88,10 @@
 .shopping-cart-item td[data-testid="image"] {
   flex-shrink: 0;
   width: 100px;
+
+  @media screen and (max-width: 768px) {
+    width: 50px;
+  }
 }
 
 .shopping-cart-item td[data-testid="title"] {
@@ -92,6 +101,10 @@
 .shopping-cart-item td[data-testid="price"] {
   width: 100px;
   text-align: right;
+
+  @media screen and (max-width: 768px) {
+    width: 50px;
+  }
 }
 
 .cart-summary {
@@ -99,6 +112,10 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--space-m);
+  @media screen and (max-width: 768px) {
+    display: block
+  }
+
 }
 
 .cart-total {
@@ -119,6 +136,14 @@
   min-width: 120px;
   font-size: var(--font-size-h4);
   font-weight: 600;
+
+  @media screen and (max-width: 768px) {
+    margin-left: var(--space-m);
+    min-width: auto;
+    width: auto;
+    padding: var(--space-s) var(--space-xs);
+    font-size: var(--font-size-h6);
+  }
 }
 
 .inline-button {
@@ -136,6 +161,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: var(--space-xs);
+
+  @media screen and (max-width: 768px) {
+    width: 80px
+  }
 }
 
 .item-price {
@@ -144,6 +173,10 @@
 
 .image-wrapper {
   width: 100px;
+
+  @media screen and (max-width: 768px) {
+    width: 50px;
+  }
 }
 
 .image {

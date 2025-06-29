@@ -33,7 +33,7 @@ body, html {
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
-  background:  linear-gradient(to bottom, var(--gog-purple-10), transparent), var(--gog-gray);
+  background: linear-gradient(to bottom, var(--gog-purple-10), transparent), var(--gog-gray);
 }
 
 img {
@@ -44,9 +44,13 @@ img {
   width: 1060px;
   padding: 0 var(--space-l);
   margin: 0 auto;
+
+  @media screen and (max-width: 1060px) {
+    width: 100%
+  }
 }
 
-figure, ul ,ol, h1, h2, h3, h4, h5, h6, p, blockquote, pre {
+figure, ul, ol, h1, h2, h3, h4, h5, h6, p, blockquote, pre {
   margin: 0;
   padding: 0;
 }

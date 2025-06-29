@@ -2,6 +2,10 @@
   display: grid;
   gap: var(--space-l);
   grid-template-columns: repeat(5, 1fr);
+
+  @media screen and (max-width: 1060px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .featured-games-wrapper {
