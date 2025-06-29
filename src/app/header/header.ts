@@ -1,15 +1,11 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {Cart} from '../cart/cart';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Cart } from '../cart/cart';
 
 @Component({
   selector: 'app-header',
-  imports: [
-    Cart
-  ],
+  imports: [Cart],
   templateUrl: './header.html',
   styleUrl: './header.css',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Header {
-
-}
+export class Header {}

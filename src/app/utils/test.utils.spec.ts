@@ -1,23 +1,22 @@
-import {Component} from '@angular/core';
-import {ComponentFixture, TestBed} from '@angular/core/testing';
-import {getElementByTestId} from './test.utils';
+import { Component } from '@angular/core';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { getElementByTestId } from './test.utils';
 
 @Component({
   standalone: true,
   template: `
     <div data-testid="test-div">Hello World</div>
     <button data-testid="test-button">Click me</button>
-  `
+  `,
 })
-class TestHostComponent {
-}
+class TestHostComponent {}
 
 describe('utils/getElementByTestId', () => {
   let fixture: ComponentFixture<TestHostComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TestHostComponent]
+      imports: [TestHostComponent],
     }).compileComponents();
 
     fixture = TestBed.createComponent(TestHostComponent);

@@ -1,12 +1,12 @@
 :root {
-  --gog-gray: #CDCDCD;
-  --gog-white: #E0E0E0;
-  --gog-light-gray: #DEDEDE;
+  --gog-gray: #cdcdcd;
+  --gog-white: #e0e0e0;
+  --gog-light-gray: #dedede;
   --gog-muted: #8f8f8f;
   --gog-dark-gray: #404040;
-  --gog-purple: #6C36AD;
+  --gog-purple: #6c36ad;
   --gog-purple-10: rgba(108, 54, 173, 0.1);
-  --gog-green: #00905E;
+  --gog-green: #00905e;
 
   --space-xs: 3px;
   --space-s: 6px;
@@ -22,10 +22,11 @@
   --font-size-h5: 16px;
   --font-size-h6: 16px;
 
-  --shadow: 0px 1px 3px #aca8a8
+  --shadow: 0px 1px 3px #aca8a8;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   font-family: "Source Sans 3", sans-serif;
@@ -33,7 +34,9 @@ body, html {
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
-  background: linear-gradient(to bottom, var(--gog-purple-10), transparent), var(--gog-gray);
+  background:
+    linear-gradient(to bottom, var(--gog-purple-10), transparent),
+    var(--gog-gray);
 }
 
 img {
@@ -46,11 +49,22 @@ img {
   margin: 0 auto;
 
   @media screen and (max-width: 1060px) {
-    width: 100%
+    width: 100%;
   }
 }
 
-figure, ul, ol, h1, h2, h3, h4, h5, h6, p, blockquote, pre {
+figure,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre {
   margin: 0;
   padding: 0;
 }
@@ -59,7 +73,8 @@ figure, ul, ol, h1, h2, h3, h4, h5, h6, p, blockquote, pre {
   box-sizing: border-box;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 

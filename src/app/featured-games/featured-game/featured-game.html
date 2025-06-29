@@ -1,21 +1,32 @@
 <article class="game">
   <figure data-testid="thumbnail">
-    <img [alt]="'Cover art of ' + game().name" [src]="game().media" class="image"/>
+    <img
+      [alt]="'Cover art of ' + game().name"
+      [src]="game().media"
+      class="image"
+    />
   </figure>
   <div class="game-desc">
     <h3 class="title" data-testid="title">{{ game().name }}</h3>
   </div>
   <footer class="game-footer">
     @if (game().discount) {
-      <span class="discount-label label" data-testid="discount">-{{ game().discount }}%</span>
+      <span class="discount-label label" data-testid="discount"
+        >-{{ game().discount }}%</span
+      >
     }
     @if (game().isOwned) {
       <span class="owned-label label" data-testid="owned">Owned</span>
     } @else if (game().inCart) {
       <span class="in-cart-label label" data-testid="in-cart">In Cart</span>
     } @else {
-      <span title="Add to Cart" (click)="addToCart()" class="price-label"
-            data-testid="price">{{ game().price | currency }}</span>
+      <span
+        title="Add to Cart"
+        (click)="addToCart()"
+        class="price-label"
+        data-testid="price"
+        >{{ game().price | currency }}</span
+      >
     }
   </footer>
 </article>

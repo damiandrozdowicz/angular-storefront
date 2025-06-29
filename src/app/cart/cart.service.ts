@@ -1,10 +1,10 @@
-import {Injectable, signal} from '@angular/core';
-import {Game} from '../models/game';
+import { Injectable, signal } from '@angular/core';
+import { Game } from '../models/game';
 import { Observable } from 'rxjs';
 import { toObservable } from '@angular/core/rxjs-interop';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CartService {
   private readonly _cartItems = signal<Game[]>([]);
@@ -28,13 +28,13 @@ export class CartService {
 
   removeFromCart(item: Game): void {
     this._cartItems.update((cartItems) =>
-      cartItems.filter(itemInCart => itemInCart.id !== item.id)
+      cartItems.filter((itemInCart) => itemInCart.id !== item.id),
     );
   }
 
   private isGameInCart(game: Game): boolean {
     return this.cartItems().some((cartItem) => {
       return cartItem.id === game.id;
-    })
+    });
   }
 }

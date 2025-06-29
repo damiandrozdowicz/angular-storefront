@@ -113,9 +113,8 @@
   justify-content: space-between;
   gap: var(--space-m);
   @media screen and (max-width: 768px) {
-    display: block
+    display: block;
   }
-
 }
 
 .cart-total {
@@ -129,7 +128,7 @@
 
 .button {
   color: var(--gog-white);
-  background: linear-gradient(to bottom, #7A3DC6, #B65AE2);
+  background: linear-gradient(to bottom, #7a3dc6, #b65ae2);
   padding: var(--space-m) var(--space-s);
   text-transform: uppercase;
   text-align: center;
@@ -152,7 +151,7 @@
 }
 
 .button:hover {
-  background: linear-gradient(to bottom, #B65AE2, #7A3DC6);
+  background: linear-gradient(to bottom, #b65ae2, #7a3dc6);
 }
 
 .item-name {
@@ -163,7 +162,7 @@
   margin-bottom: var(--space-xs);
 
   @media screen and (max-width: 768px) {
-    width: 80px
+    width: 80px;
   }
 }
 
