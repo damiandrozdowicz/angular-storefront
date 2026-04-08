@@ -7,7 +7,7 @@ describe('CartService', () => {
     name: 'The Settlers 2: Gold Edition',
     price: 5.9,
     discount: null,
-    media: 'gog-game-3.png',
+    media: 'storefront-game-3.png',
     inCart: false,
     isOwned: false,
   };
@@ -16,7 +16,7 @@ describe('CartService', () => {
     name: 'Neverwinter Nights',
     price: 7.9,
     discount: null,
-    media: 'gog-game-4.png',
+    media: 'storefront-game-4.png',
     inCart: false,
     isOwned: false,
   };
@@ -26,7 +26,7 @@ describe('CartService', () => {
     name: "Assassin's Creed: Director's Cut",
     price: 4.5,
     discount: 50,
-    media: 'gog-game-5.png',
+    media: 'storefront-game-5.png',
     inCart: false,
     isOwned: false,
   };

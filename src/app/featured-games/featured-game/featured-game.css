@@ -34,7 +34,7 @@
 .label {
   padding: var(--space-xs) var(--space-s);
   text-transform: uppercase;
-  border: solid 2px var(--gog-gray);
+  border: solid 2px var(--storefront-gray);
   display: block;
   min-width: 40px;
   font-size: var(--font-size-base);
@@ -43,18 +43,18 @@
 }
 
 .discount-label {
-  background-color: var(--gog-green);
-  color: var(--gog-white);
+  background-color: var(--storefront-green);
+  color: var(--storefront-white);
 }
 
 .in-cart-label {
-  border: solid var(--gog-muted);
-  color: var(--gog-muted);
+  border: solid var(--storefront-muted);
+  color: var(--storefront-muted);
 }
 
 .owned-label {
-  color: var(--gog-muted);
-  border: solid 2px var(--gog-muted);
+  color: var(--storefront-muted);
+  border: solid 2px var(--storefront-muted);
   opacity: 0.5;
 }
 

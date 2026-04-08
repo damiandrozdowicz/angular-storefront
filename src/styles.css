@@ -1,12 +1,12 @@
 :root {
-  --gog-gray: #cdcdcd;
-  --gog-white: #e0e0e0;
-  --gog-light-gray: #dedede;
-  --gog-muted: #8f8f8f;
-  --gog-dark-gray: #404040;
-  --gog-purple: #6c36ad;
-  --gog-purple-10: rgba(108, 54, 173, 0.1);
-  --gog-green: #00905e;
+  --storefront-gray: #cdcdcd;
+  --storefront-white: #e0e0e0;
+  --storefront-light-gray: #dedede;
+  --storefront-muted: #8f8f8f;
+  --storefront-dark-gray: #404040;
+  --storefront-purple: #6c36ad;
+  --storefront-purple-10: rgba(108, 54, 173, 0.1);
+  --storefront-green: #00905e;
 
   --space-xs: 3px;
   --space-s: 6px;
@@ -35,8 +35,8 @@ html {
   font-style: normal;
   font-size: 14px;
   background:
-    linear-gradient(to bottom, var(--gog-purple-10), transparent),
-    var(--gog-gray);
+    linear-gradient(to bottom, var(--storefront-purple-10), transparent),
+    var(--storefront-gray);
 }
 
 img {

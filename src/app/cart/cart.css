@@ -127,7 +127,7 @@
 }
 
 .button {
-  color: var(--gog-white);
+  color: var(--storefront-white);
   background: linear-gradient(to bottom, #7a3dc6, #b65ae2);
   padding: var(--space-m) var(--space-s);
   text-transform: uppercase;

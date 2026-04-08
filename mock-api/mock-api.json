@@ -13,35 +13,35 @@
       "name": "Oddworld: Stranger's Wrath",
       "price": 5.9,
       "discount": 50,
-      "media": "gog-game-1.png"
+      "media": "storefront-game-1.png"
     },
     {
       "id": 2,
       "name": "Chaos on Deponia",
       "price": 9.9,
       "discount": null,
-      "media": "gog-game-2.png"
+      "media": "storefront-game-2.png"
     },
     {
       "id": 3,
       "name": "The Settlers 2: Gold Edition",
       "price": 5.9,
       "discount": null,
-      "media": "gog-game-3.png"
+      "media": "storefront-game-3.png"
     },
     {
       "id": 4,
       "name": "Neverwinter Nights",
       "price": 7.9,
       "discount": null,
-      "media": "gog-game-4.png"
+      "media": "storefront-game-4.png"
     },
     {
       "id": 5,
       "name": "Assassin's Creed: Director's Cut",
       "price": 4.50,
       "discount": 50,
-      "media": "gog-game-5.png"
+      "media": "storefront-game-5.png"
     }
   ]
 }

@@ -14,7 +14,7 @@ const mockedGamesResponse: Game[] = [
     name: 'Neverwinter Nights',
     price: 7.9,
     discount: null,
-    media: 'gog-game-4.png',
+    media: 'storefront-game-4.png',
     inCart: true,
     isOwned: false,
   },
@@ -23,7 +23,7 @@ const mockedGamesResponse: Game[] = [
     name: "Assassin's Creed: Director's Cut",
     price: 4.5,
     discount: 50,
-    media: 'gog-game-5.png',
+    media: 'storefront-game-5.png',
     inCart: true,
     isOwned: false,
   },
@@ -107,7 +107,7 @@ describe('Cart', () => {
     const images = fixture.debugElement.nativeElement.querySelectorAll(
       `[data-testid=${ElementTestId.CartItemImage}]`,
     );
-    expect(images[0].getAttribute('src')).toBe('gog-game-4.png');
+    expect(images[0].getAttribute('src')).toBe('storefront-game-4.png');
     expect(images[0].getAttribute('alt')).toBe(
       'Cover art of Neverwinter Nights',
     );

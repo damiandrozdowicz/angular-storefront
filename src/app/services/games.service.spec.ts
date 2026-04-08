@@ -19,14 +19,14 @@ describe('GamesService', () => {
         name: 'Neverwinter Nights',
         price: 7.9,
         discount: null,
-        media: 'gog-game-4.png',
+        media: 'storefront-game-4.png',
       },
       {
         id: 5,
         name: "Assassin's Creed: Director's Cut",
         price: 4.5,
         discount: 50,
-        media: 'gog-game-5.png',
+        media: 'storefront-game-5.png',
       },
     ];
 
