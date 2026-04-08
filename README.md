@@ -4,6 +4,8 @@ A fully functional e-commerce storefront SPA built with **Angular 20**, demonstr
 
 > 🛠️ Built as a portfolio piece to showcase real-world Angular skills — clean architecture, reactive state management, OnPush change detection, and test-driven development.
 
+<img width="1230" height="729" alt="image" src="https://github.com/user-attachments/assets/49cb488b-81ec-4f6a-ac32-59167aaee1db" />
+
 ---
 
 ## ✨ Features
